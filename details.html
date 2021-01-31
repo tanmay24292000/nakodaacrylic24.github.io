@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <script src=" L:\angular.js">
+    </script>
+</head>
+
+<body ng-app="rr" ng-controller="ee">
+    <a href="listofproduct.html" target="op"><button style="color: chartreuse; font-size: xx-large; background-color: crimson; ">Our Product.</button></a><br>
+    <br><br><br><a href="meetingform.html" target="op"><button style="color: chartreuse; font-size: xx-large; background-color: crimson; " >Order.</button></a>
+    <br><br><br><br><button style="color: chartreuse; font-size: xx-large; background-color: crimson; " ng-click="det1()">Contact Details.</button>
+    <br><br><br><br>
+    <a href="nakoda.html"> <button style="color: chartreuse; font-size: xx-large; background-color: crimson; ">About नाकोडा</button></a>
+    <h2 ng-bind="obb"></h2>
+	<h2 ng-bind="tsj"></h2>
+	<h2 ng-bind="kbr"></h2>
+	<h2 ng-bind="phd"></h2>
+	
+</body>
+<script>
+    var app = angular.module('rr', []);
+    app.controller('ee', function($scope) {
+        $scope.det1 = function() {
+            $scope.obb ="Phone No:8087808342,8421626389."; 
+			$scope.tsj ="E-mail ID :nakoda@gmail.com.";
+			$scope.kbr ="Telephone-no: 020-77772429,";
+			$scope.phd ="Address:Shop No:- 07 Shinde Complex, opp. to Saswas Bus Stand, next to Relaince Petrol Pump,Saswad. 412-301.";
+		
+		
+		
+		
+		
+		
+		};
+    });
+</script>
+
+</html>

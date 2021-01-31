@@ -1,0 +1,20 @@
+<html>
+
+<head></head>
+
+<body ng-app="rr" ng-controller="ee">
+    Product Names<input type="text"><br> Quantity
+    <input type="number">
+    <br> Your Adress <input type="text"> <br>Full Name<input type="text"><br> Mobil Number<input type="number"><br> bank Name<input type="number"><br> Credit card Number<input type="number"><br> debit card Number<input type="number">
+    <br><br><button ng-click="dy()">Order</button>
+    <h2 ng-bind="mg"></h2>
+</body>
+<script>
+    var app = angular.module('rr', []);
+    app.controller('ee', function($scope) {
+                $scope.dy = function() {
+                    $scope.mg = "Your product will be recived at adress provided by you";
+                };
+</script>
+
+</html>

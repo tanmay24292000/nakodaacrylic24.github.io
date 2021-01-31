@@ -1,0 +1,36 @@
+<html>
+<script src=" L:\angular.js"></script>
+
+<body ng-app="uu" ng-controller="pp">
+    <h1>Different Plates</h1>
+    <h2>Mellamine</h2>
+    <img src="firstplate.jpg">
+
+    <button ng-mouseover="detailofplate1()"> Details Of Plate <h2 ng-bind="dmsg" style="text-align:right;"></h2></button>
+    <hr>
+    <img src="plate2.jpeg">
+    <button ng-mouseover="detailofplate1()"> Details Of Plate <h2 ng-bind="dmsg" style="text-align:right;"></h2></button>
+    <hr>
+    <img src="plate3.jpeg">
+    <button ng-mouseover="detailofplate1()"> Details Of Plate <h2 ng-bind="dmsg" style="text-align:right;"></h2></button>
+    <hr>
+    <img src="plate4.jpeg">
+    <button ng-mouseover="detailofplate1()"> Details Of Plate <h2 ng-bind="dmsg" style="text-align:right;"></h2></button>
+    <hr>
+
+    <img src="plate5.jpeg">
+    <button ng-mouseover="detailofplate1()"> Details Of Plate <h2 ng-bind="dmsg" style="text-align:right;"></h2></button>
+    <hr>
+    <a href="index.html" target="index"><button>HOME</button></a>
+</body>
+<script>
+    var app = angular.module('uu', []);
+    app.controller('pp', function($scope) {
+        $scope.detailofplate1 = function() {
+            $scope.dmsg = "Size: 11 to 14 Inches,Weight:200 grams,mrp:75Rs. ";
+        };
+
+    });
+</script>
+
+</html>

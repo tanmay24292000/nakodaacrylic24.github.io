@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <script src=" L:\angular.js"></script>
+</head>
+
+<body ng-app="rr" ng-controller="ee">
+    <h1>Electronic Untencils</h1>
+    <button ng-mouseover="detailofe1()"><h2>Cooker</h2></button>
+    <br><br><br><img src="e1.jpg">
+    <h3 ng-bind="emsg"></h3>
+
+    <button ng-mouseover="detailofe2()"><h2>Coffee Maker</h2></button>
+    <br><br><br>
+    <img src="e2.jpg">
+    <h3 ng-bind="e2msg"></h3>
+    <button ng-mouseover="detailofe3()"><h2>Toasters and Ovens</h2></button>
+    <br><br><br>
+    <img src="e3.jpg">
+    <h3 ng-bind="e3msg"></h3>
+    <button ng-mouseover="detailofe4()"><h2>Blender</h2></button>
+    <br><br><br>
+    <img src="e4.jpg">
+    <h3 ng-bind="e4msg"></h3>
+    <button ng-mouseover="detailofe5()"><h2>Food Processor</h2></button>
+    <br><br><br><img src="e5.jpg">
+    <h3 ng-bind="e5msg"></h3>
+    <br><br><br>
+    <a href="index.html" target="index"><button>HOME</button></a>
+</body>
+<script>
+    var app = angular.module('rr', []);
+    app.controller('ee', function($scope) {
+        $scope.detailofe1 = function() {
+            $scope.emsg = "Appliances make life easier. Nowhere is this more evident than in the kitchen, where large and small appliances save people time and effort every single day. Although large appliances, such as refrigerators, ovens and dishwashers, are crucial to a functional kitchen, small appliances bring a diversity of conveniences to your kitchen. No kitchen should be without these top 10 small appliances.";
+        };
+        $scope.detailofe2 = function() {
+            $scope.e2msg = "Coffee makers are an indispensable small appliance. Unlike many other small appliances, coffee makers are found outside the kitchen. You can see these appliances in offices and hotel rooms because almost everyone loves a hot cup of coffee at the start of the day.";
+        };
+        $scope.detailofe3 = function() {
+            $scope.e3msg = "Toasters and toaster ovens are a basic requirement in many kitchens. Toasters quickly and efficiently crisp breads and bagels, while toaster ovens are great for melting cheese and warming up foods.";
+        };
+        $scope.detailofe4 = function() {
+            $scope.e4msg = "Blenders are an important appliance for those who need to mix sauces, juices or soups. Not to be confused with food processors, a blender’s main benefit is its ability to “blend” two or more ingredients together. Its motor is generally less powerful than that of a food processor, and its blades are less sharp, so a blender is better used with liquids and ices.";
+        };
+        $scope.detailofe5 = function() {
+            $scope.e5msg = "If you need to chop a lot of vegetables in a short amount of time, a food processor is your best friend. Many units come with a variety of blade attachments so that you can pick and choose which blade will work best for your processing needs.";
+        };
+    });
+</script>
+
+</html>
